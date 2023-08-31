@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textBisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="Bisi"
+        android:textSize="90sp"
+        android:textStyle="bold"
+        android:textColor="#6748BF"
+        android:background="#FF6340"/>
+
+    <TextView
+        android:id="@+id/textUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Usuario"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="70dp"
+        android:layout_below="@id/textBisi"
+        android:textColor="#6748BF"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/casillaUsuario"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textUsuario"
+        android:layout_marginTop="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#6748BF"
+            android:hint="Ingresa tu usuario"
+            android:background="#FFA590"  />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textUsuario"
+        android:textSize="20dp"
+        android:text="Contraseña:"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:textColor="#6748BF"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/casillaContraseña"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textContraseña"
+        android:layout_marginTop="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#6748BF"
+            android:hint="Ingresa tu usuario"
+            android:background="#FFA590"  />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonIniciarSesion"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesión"
+        android:layout_below="@id/textContraseña"
+        android:layout_marginTop="120dp"/>
+
+
+</RelativeLayout>

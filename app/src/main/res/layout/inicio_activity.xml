@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_marginTop="0dp"
+            android:background="#FF6340">
+
+                <TextView
+                    android:id="@+id/panelSuperior"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:text="Bisi"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="40dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#6748BF"/>
+
+                <ImageView
+                    android:id="@+id/imageAjustes"
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_toEndOf="@id/panelSuperior"
+                    android:layout_marginStart="10dp"
+                    app:srcCompat="@drawable/ajuste" />
+                <ImageView
+                    android:id="@+id/imagePerfil"
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_toStartOf="@id/panelSuperior"
+                    android:layout_marginEnd="10dp"
+                    app:srcCompat="@drawable/usuario" />
+
+        </FrameLayout>
+
+</RelativeLayout>

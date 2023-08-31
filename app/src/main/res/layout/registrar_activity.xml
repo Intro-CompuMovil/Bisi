@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textBisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:text="Bisi"
+        android:textSize="90sp"
+        android:textStyle="bold"
+        android:textColor="#6748BF"
+        android:background="#FF6340"/>
+
+    <ImageView
+        android:id="@+id/imageFoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/usuario__2_"
+        android:layout_below="@id/textBisi"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageFoto"
+        android:textSize="20dp"
+        android:text="Nombre:"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="#6748BF"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/casillaNombre"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textNombre"
+        android:layout_marginTop="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#6748BF"
+            android:hint="Ingresa tu nombre"
+            android:background="#FFA590"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textNombre"
+        android:textSize="20dp"
+        android:text="Correo:"
+        android:textStyle="bold"
+        android:layout_marginTop="70dp"
+        android:textColor="#6748BF"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/casillaCorreo"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textCorreo"
+        android:layout_marginTop="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#6748BF"
+            android:hint="Ingresa tu correo"
+            android:background="#FFA590" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textUsuario"
+        android:textSize="20dp"
+        android:text="Contraseña:"
+        android:textStyle="bold"
+        android:layout_marginTop="70dp"
+        android:textColor="#6748BF" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/casillaContraseña"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textContraseña"
+        android:layout_marginTop="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#6748BF"
+            android:hint="Ingresa tu contraseña"
+            android:background="#FFA590" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonRegistrarse"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:layout_below="@id/textContraseña"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:id="@+id/textUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Usuario"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="70dp"
+        android:layout_below="@id/textCorreo"
+        android:textColor="#6748BF"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/casillaUsuario"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textUsuario"
+        android:layout_marginTop="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#6748BF"
+            android:hint="Ingresa tu usuario"
+            android:background="#FFA590" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</RelativeLayout>

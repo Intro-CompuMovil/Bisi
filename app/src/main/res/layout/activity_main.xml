@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF6340">
+
+
+    <TextView
+        android:id="@+id/textoBisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bisi"
+        android:layout_centerInParent="true"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        android:textColor="#6748BF"/>
+
+    <Button
+        android:id="@+id/buttonIniciar"
+        android:layout_width="100sp"
+        android:layout_height="60sp"
+        android:text="Iniciar"
+        android:textSize="15sp"
+        android:layout_below="@id/textoBisi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF" />
+
+
+</RelativeLayout>
