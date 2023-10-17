@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rojo">
+
+    <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo__2_"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/inicio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Iniciar"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/morado_oscuro"
+            android:textSize="25dp"/>
+
+        |   </RelativeLayout>
+
+</RelativeLayout>

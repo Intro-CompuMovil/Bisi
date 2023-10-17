@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="rojo">#f94249</color>
+    <color name="morado">#FF757A</color>
+    <color name="morado_oscuro">#C800FE</color>
+    <color name="curuba">#E1B7FF</color>
+    <color name="rosadito">#FFC8CA</color>
+    <color name="letra_oscura">#410056</color>
+</resources>

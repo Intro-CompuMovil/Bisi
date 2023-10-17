@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/simbolo1"
+        android:layout_width="1800px"
+        android:layout_height="1400px"
+        app:srcCompat="@drawable/pista"
+        android:layout_marginTop="-305px"
+        android:layout_marginStart="-40px"
+        android:alpha="0.35"/>
+
+    <ImageView
+        android:id="@+id/simbolo2"
+        android:layout_width="1100px"
+        android:layout_height="1100px"
+        android:layout_marginEnd="-400px"
+        android:layout_marginTop="1400px"
+        android:layout_marginBottom="-500px"
+        android:alpha="0.35"
+        app:srcCompat="@drawable/pista" />
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="500px"
+            app:srcCompat="@drawable/logo_3_"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/inicio_sesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Sesión"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/morado_oscuro"
+            android:textSize="25dp"/>
+
+        <Button
+            android:id="@+id/registrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/inicio_sesion"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/morado_oscuro"
+            android:textSize="25dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/simbolo1"
+        app:srcCompat="@drawable/pista__1_"
+        android:layout_width="1800px"
+        android:layout_height="1400px"
+        android:layout_marginTop="-495px"
+        android:layout_marginStart="-100px"
+        android:alpha="0.35"/>
+
+    <ImageView
+        android:id="@+id/simbolo2"
+        app:srcCompat="@drawable/pista__1_"
+        android:layout_width="1300px"
+        android:layout_height="1100px"
+        android:layout_marginEnd="-400px"
+        android:layout_marginStart="-100px"
+        android:layout_marginTop="1500px"
+        android:layout_marginBottom="-600px"
+        android:alpha="0.35"/>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo_3_"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:background="@drawable/borde_redondo"
+            android:textColor="@color/morado_oscuro"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="30dp"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usuario"
+            android:background="@drawable/borde_redondo"
+            android:textColor="@color/morado_oscuro"
+            android:layout_below="@id/nombre"
+            android:layout_marginTop="30dp"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:id="@+id/contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:background="@drawable/borde_redondo"
+            android:textColor="@color/morado_oscuro"
+            android:layout_below="@id/usuario"
+            android:layout_marginTop="30dp"
+            android:inputType="textPassword"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:id="@+id/telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono"
+            android:background="@drawable/borde_redondo"
+            android:textColor="@color/morado_oscuro"
+            android:layout_below="@id/contrasena"
+            android:layout_marginTop="30dp"
+            android:inputType="phone"
+            android:textColorHint="@color/white" />
+
+        <Button
+            android:id="@+id/registrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/telefono"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/morado_oscuro"
+            android:textSize="20dp"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold"/>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
