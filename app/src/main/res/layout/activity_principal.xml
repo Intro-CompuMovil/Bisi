@@ -30,20 +30,14 @@
         android:padding="20dp"
         android:layout_centerHorizontal="true">
 
-        <ImageView
-            android:id="@+id/flecha"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/derecha"
-            android:layout_marginStart="350dp"/>
-
         <RelativeLayout
             android:id="@+id/cuadro1"
             android:layout_width="330dp"
             android:layout_height="200dp"
             android:background="@drawable/carrusel_1"
-            android:backgroundTint="@color/curuba"
-            android:padding="20dp">
+            android:backgroundTint="@color/rosadito"
+            android:padding="20dp"
+            android:layout_centerHorizontal="true">
 
             <ImageView
                 android:id="@+id/fondo"
@@ -84,151 +78,6 @@
                 android:layout_toEndOf="@id/medalla1"
                 android:layout_marginStart="30dp"/>
         </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/cuadro2"
-            android:layout_width="330dp"
-            android:layout_height="200dp"
-            android:background="@drawable/carrusel_1"
-            android:backgroundTint="@color/rosadito"
-            android:padding="20dp">
-
-            <ImageView
-                android:id="@+id/fondo2"
-                android:layout_width="180dp"
-                android:layout_height="300dp"
-                android:layout_toEndOf="@id/medalla2"
-                android:layout_alignParentTop="true"
-                android:layout_marginEnd="-20dp"
-                android:alpha="0.2"
-                android:layout_marginTop="-20dp"
-                app:srcCompat="@drawable/pista__1_"
-                android:layout_marginBottom="-20dp"/>
-
-            <ImageView
-                android:id="@+id/medalla2"
-                android:layout_width="150dp"
-                android:layout_height="300dp"
-                app:srcCompat="@drawable/medalla"/>
-
-            <TextView
-                android:id="@+id/contexto2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Recorre tus primeros 30 Km"
-                android:textSize="22dp"
-                android:layout_toEndOf="@id/medalla2"
-                android:layout_marginStart="30dp"
-                android:layout_below="@id/reto2"
-                android:layout_marginTop="5dp"/>
-
-            <TextView
-                android:id="@+id/reto2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="RETO"
-                android:textStyle="bold"
-                android:textSize="30dp"
-                android:layout_toEndOf="@id/medalla2"
-                android:layout_marginStart="30dp"/>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/cuadro3"
-            android:layout_width="330dp"
-            android:layout_height="200dp"
-            android:background="@drawable/carrusel_1"
-            android:backgroundTint="@color/curuba"
-            android:padding="20dp">
-
-            <ImageView
-                android:id="@+id/fondo3"
-                android:layout_width="180dp"
-                android:layout_height="300dp"
-                android:layout_toEndOf="@id/medalla3"
-                android:layout_alignParentTop="true"
-                android:layout_marginEnd="-20dp"
-                android:alpha="0.2"
-                android:layout_marginTop="-20dp"
-                app:srcCompat="@drawable/pista"
-                android:layout_marginBottom="-20dp"/>
-
-            <ImageView
-                android:id="@+id/medalla3"
-                android:layout_width="150dp"
-                android:layout_height="300dp"
-                app:srcCompat="@drawable/medalla"/>
-
-            <TextView
-                android:id="@+id/contexto3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Recorre tus primeros 50 Km"
-                android:textSize="22dp"
-                android:layout_toEndOf="@id/medalla3"
-                android:layout_marginStart="30dp"
-                android:layout_below="@id/reto3"
-                android:layout_marginTop="5dp"/>
-
-            <TextView
-                android:id="@+id/reto3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="RETO"
-                android:textStyle="bold"
-                android:textSize="30dp"
-                android:layout_toEndOf="@id/medalla3"
-                android:layout_marginStart="30dp"/>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/cuadro4"
-            android:layout_width="330dp"
-            android:layout_height="200dp"
-            android:background="@drawable/carrusel_1"
-            android:backgroundTint="@color/rosadito"
-            android:padding="20dp">
-
-            <ImageView
-                android:id="@+id/fondo4"
-                android:layout_width="180dp"
-                android:layout_height="300dp"
-                android:layout_toEndOf="@id/medalla4"
-                android:layout_alignParentTop="true"
-                android:layout_marginEnd="-20dp"
-                android:alpha="0.2"
-                android:layout_marginTop="-20dp"
-                app:srcCompat="@drawable/pista__1_"
-                android:layout_marginBottom="-20dp"/>
-
-            <ImageView
-                android:id="@+id/medalla4"
-                android:layout_width="150dp"
-                android:layout_height="300dp"
-                app:srcCompat="@drawable/medalla"/>
-
-            <TextView
-                android:id="@+id/contexto4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Recorre tus primeros 100 Km"
-                android:textSize="22dp"
-                android:layout_toEndOf="@id/medalla4"
-                android:layout_marginStart="30dp"
-                android:layout_below="@id/reto4"
-                android:layout_marginTop="5dp"/>
-
-            <TextView
-                android:id="@+id/reto4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="RETO"
-                android:textStyle="bold"
-                android:textSize="30dp"
-                android:layout_toEndOf="@id/medalla4"
-                android:layout_marginStart="30dp"/>
-        </RelativeLayout>
-
 
     </RelativeLayout>
 

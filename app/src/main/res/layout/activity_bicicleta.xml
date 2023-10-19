@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/barra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/rojo">
+
+        <ImageView
+            android:id="@+id/simbolo1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/logo"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/destacadas"
+        android:layout_width="match_parent"
+        android:layout_height="346.5dp"
+        android:layout_below="@id/barra"
+        android:background="@color/white"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="350dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/carrusel_1"
+            android:backgroundTint="@color/rosadito"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/mondonedo"
+                android:layout_width="250dp"
+                android:layout_height="190dp"
+                app:srcCompat="@drawable/mondo_edo"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/ruta1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alto de mondoñedo"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textColor="@color/letra_oscura"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/mondonedo"/>
+
+            <TextView
+                android:id="@+id/contexto_ruta1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 kilómetros desde la salida de Bogotá y 179 metros de subida"
+                android:textSize="18dp"
+                android:textColor="@color/letra_oscura"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/ruta1"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/novedades"
+        android:layout_width="match_parent"
+        android:layout_height="346.5dp"
+        android:layout_below="@id/destacadas"
+        android:background="@color/white"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="350dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/carrusel_1"
+            android:backgroundTint="@color/curuba"
+            android:layout_centerHorizontal="true">
+
+
+            <ImageView
+                android:id="@+id/embalse_sisga"
+                android:layout_width="250dp"
+                android:layout_height="180dp"
+                app:srcCompat="@drawable/represa_del_sisga"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/ruta_nov1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Embalse del sisga"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textColor="@color/letra_oscura"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/embalse_sisga"/>
+
+            <TextView
+                android:id="@+id/contexto_ruta_nov1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25 kilómetros y con inclinación media-corta"
+                android:textSize="18dp"
+                android:textColor="@color/letra_oscura"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/ruta_nov1"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/menu_prin"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/rojo"
+        android:layout_below="@id/novedades">
+
+        <ImageView
+            android:id="@+id/casa"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginRight="25dp"
+            app:srcCompat="@drawable/casa_silueta_negra_sin_puerta" />
+
+        <ImageView
+            android:id="@+id/bici"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bicicleta"
+            android:padding="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/casa"/>
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/grupo__2_"
+            android:padding="15dp"
+            android:layout_toRightOf="@id/bici"/>
+    </RelativeLayout>
+
+</RelativeLayout>

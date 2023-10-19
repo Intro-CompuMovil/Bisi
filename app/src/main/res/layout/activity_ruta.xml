@@ -2,6 +2,8 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white">
@@ -20,21 +22,19 @@
             android:layout_centerHorizontal="true"/>
     </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/buscar"
-        android:layout_width="match_parent"
-        android:layout_height="308dp"
-        android:layout_below="@id/barra"
-        android:background="@color/white">
 
-    </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/mis_amigos"
+        android:id="@+id/mapa"
         android:layout_width="match_parent"
-        android:layout_height="385dp"
-        android:background="@color/morado"
-        android:layout_below="@id/buscar">
+        android:layout_height="700dp"
+        android:layout_below="@id/barra">
+
+        <org.osmdroid.views.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingClass" />
 
     </RelativeLayout>
 
@@ -43,7 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:background="@color/rojo"
-        android:layout_below="@id/mis_amigos">
+        android:layout_below="@id/mapa">
 
         <ImageView
             android:id="@+id/casa"

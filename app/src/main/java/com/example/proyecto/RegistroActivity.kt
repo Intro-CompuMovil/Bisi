@@ -6,15 +6,15 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
-class Registro : AppCompatActivity() {
+class RegistroActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.registro)
+        setContentView(R.layout.activity_registro)
 
         val inicio = findViewById<Button>(R.id.registrar)
 
         inicio.setOnClickListener {
-            val pantalla_ini_regis = Intent (this, IniRegis::class.java)
+            val pantalla_ini_regis = Intent (this, IniRegisActivity::class.java)
             startActivity(pantalla_ini_regis)
             Toast.makeText(applicationContext, "¡Se registro correctamente!", Toast.LENGTH_LONG).show()
         }
