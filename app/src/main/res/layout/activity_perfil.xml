@@ -29,6 +29,93 @@
         android:background="@color/white"
         android:layout_below="@id/barra">
 
+        <ImageView
+            android:id="@+id/fondoperfil1"
+            app:srcCompat="@drawable/pista__1_"
+            android:layout_width="1800px"
+            android:layout_height="1400px"
+            android:layout_marginTop="-495px"
+            android:layout_marginStart="-100px"
+            android:alpha="0.35"/>
+
+        <ImageView
+            android:id="@+id/fondoperfil2"
+            app:srcCompat="@drawable/pista__1_"
+            android:layout_width="1300px"
+            android:layout_height="1100px"
+            android:layout_marginEnd="-400px"
+            android:layout_marginStart="-100px"
+            android:layout_marginTop="900px"
+            android:layout_marginBottom="-600px"
+            android:alpha="0.35"/>
+
+        <ImageView
+            android:id="@+id/persona"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            app:srcCompat="@drawable/usuario__1_" />
+
+        <TextView
+            android:id="@+id/Nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Juan Esteban Villamil"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/letra_oscura"
+            android:layout_below="@id/persona"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USERNAME"
+            android:textSize="23dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/Nombre"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/letra_oscura"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="juanesvillamil"
+            android:textSize="23dp"
+            android:textColor="@color/letra_oscura"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/user"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MAIL"
+            android:textSize="23dp"
+            android:textColor="@color/letra_oscura"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/username"
+            android:layout_marginTop="30dp"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="juanesvillamil@javeriana.edu.co"
+            android:textSize="23dp"
+            android:textColor="@color/letra_oscura"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/email"
+            android:layout_marginTop="15dp"/>
+
+
     </RelativeLayout>
 
     <RelativeLayout
